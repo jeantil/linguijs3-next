@@ -1,4 +1,5 @@
 node_modules
 .next
 _build/
+bundles/
 src/locales/*/messages.js
