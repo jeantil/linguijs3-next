@@ -12,7 +12,8 @@
     "compile": "lingui compile",
     "analyze": "BUNDLE_ANALYZE=both next build",
     "analyze:server": "BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build",
+    "now-build":"lingui compile && next build"
   },
   "dependencies": {
     "@lingui/react": "^3.0.0-5",
