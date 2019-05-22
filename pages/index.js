@@ -13,11 +13,10 @@ const Index = ({ messages, markAsRead, user }) => {
     console.log("render index", locale,i18n);
     return (
       <>
-      <h1>Foo s</h1>
-      <p>{JSON.stringify(i18n)}</p>
+      <h1>Foo s</h1>    
       <button onClick={changeLanguage}>toggle</button>
       <p>{locale}</p>
-      <I18nProvider language={locale} locale={locale} i18n={i18n}>
+      <I18nProvider language={locale} locale={locale} i18n={i18n}>        
         <Inbox messages={[]} markAsRead={()=>console.log("read")} user={{name:"foo"}} />
       </I18nProvider>
       </>

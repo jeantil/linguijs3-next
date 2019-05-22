@@ -12,7 +12,7 @@ const Inbox=({ messages, markAsRead, user }) => {
   return (
      <>
        <h2><Trans>Message Inbox</Trans></h2>
-
+       <p>{JSON.stringify(i18n)}</p>
        <p>
          See all <Link href="/unread"><a>unread messages</a></Link>{" or "}
          <a onClick={markAsRead}>mark them</a> as read.
