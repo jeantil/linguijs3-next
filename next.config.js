@@ -1,6 +1,6 @@
 const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 
-module.exports = withBundleAnalyzer({
+const nextConfig={
   analyzeServer: ['server', 'both'].includes(process.env.BUNDLE_ANALYZE),
   analyzeBrowser: ['browser', 'both'].includes(process.env.BUNDLE_ANALYZE),
   bundleAnalyzerConfig: {
@@ -19,4 +19,6 @@ module.exports = withBundleAnalyzer({
   //   config.plugins.push(new webpack.IgnorePlugin(/fs/));    
   //   return config;
   // }
-});
+};
+
+module.exports = withBundleAnalyzer(nextConfig);
