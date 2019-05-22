@@ -9,7 +9,10 @@
     "start": "next start",
     "add-locale": "lingui add-locale",
     "extract": "lingui extract",
-    "compile": "lingui compile"
+    "compile": "lingui compile",
+    "analyze": "BUNDLE_ANALYZE=both next build",
+    "analyze:server": "BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@lingui/react": "^3.0.0-5",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "@lingui/cli": "^3.0.0-5",
     "@lingui/loader": "^3.0.0-5",
-    "@lingui/macro": "^3.0.0-5"
+    "@lingui/macro": "^3.0.0-5",
+    "@zeit/next-bundle-analyzer": "^0.1.2"
   }
 }

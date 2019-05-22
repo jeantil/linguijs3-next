@@ -28,7 +28,8 @@ const Inbox=({ messages, markAsRead, user }) => {
              : "There're {messagesCount} messages in your inbox."
          }
        </p>
-
+      <h3>lorem ispum</h3>
+      <p><Trans>LOREM IPSUM</Trans></p>
        <footer>
          Last login on {lastLogin}.
        </footer>
