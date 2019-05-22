@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "linguijs3-next",
+  "regions": ["cdg"],
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }  
+  ]
+}
