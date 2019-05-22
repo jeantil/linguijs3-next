@@ -13,10 +13,10 @@ module.exports = withBundleAnalyzer({
       reportFilename: '../bundles/client.html'
     }
   },
-  target: 'serverless',
-  webpack:(config, {webpack,...options}) =>{
-    // Further custom configuration here
-    config.plugins.push(new webpack.IgnorePlugin(/fs/));    
-    return config;
-  }
+  target: 'serverless'//,
+  // webpack:(config, {webpack,...options}) =>{
+  //   // Further custom configuration here
+  //   config.plugins.push(new webpack.IgnorePlugin(/fs/));    
+  //   return config;
+  // }
 });
