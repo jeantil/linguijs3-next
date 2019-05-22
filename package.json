@@ -1,0 +1,25 @@
+{
+  "name": "next-lingui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
+  },
+  "dependencies": {
+    "@lingui/react": "^3.0.0-5",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@lingui/cli": "^3.0.0-5",
+    "@lingui/loader": "^3.0.0-5",
+    "@lingui/macro": "^3.0.0-5"
+  }
+}
